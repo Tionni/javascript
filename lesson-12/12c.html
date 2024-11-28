@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <button class="button" >Click</button>
+</head>
+<body>
+    <script>
+        document.querySelector(".button").addEventListener("click", ()=>{
+            changetoFinished()
+        })
+
+        function changetoFinished(){
+            button = document.querySelector(".button")
+            button.innerHTML = "Loading"
+            setTimeout(function(){
+                button.innerHTML = "Finished!"
+            }, 1000)
+            
+        }
+    </script>
+</body>
+</html>
